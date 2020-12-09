@@ -14,7 +14,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button tierListButton;
+    Button guidesButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +29,30 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        tierListButton = (Button) findViewById(R.id.button);
+        tierListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openTierListActivity();
             }
         });
+
+        guidesButton = (Button) findViewById(R.id.button2);
+        guidesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGuidesActivity();
+            }
+        });
     }
+
 
     private void openTierListActivity() {
         Intent intent = new Intent(this, TierListActivity.class);
+        startActivity(intent);
+    }
+    private void openGuidesActivity() {
+        Intent intent = new Intent(this, GuidesActivity.class);
         startActivity(intent);
     }
 
