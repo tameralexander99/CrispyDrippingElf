@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="menubutton_tierlist">Tier List</string>
     <string name="menubutton_guides">Guides</string>
-    <string name="menubutton_champions">Champion Name</string>
-    <string name="championName">Champion Name</string>
+    <string name="menubutton_champions">Champion Search</string>
+    <string name="championName">Champion Names</string>
     <string name="championFaction">Faction</string>
 </resources>

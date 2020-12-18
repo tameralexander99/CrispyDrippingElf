@@ -35,8 +35,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginTop="68dp"
         android:text="@string/menubutton_tierlist"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +45,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:text="@string/menubutton_guides"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +55,8 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:text="@string/menubutton_champions"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +65,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +75,8 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"

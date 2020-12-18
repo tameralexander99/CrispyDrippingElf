@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,7 +18,7 @@ import androidx.navigation.ui.NavigationUI;
 public class MainActivity extends AppCompatActivity {
     Button tierListButton;
     Button guidesButton;
-    Button DatabaseButton;
+    Button databaseButton;
     Button button_Clear, button_View;
     EditText et_Champion, et_faction;
     ListView List_Champions;
@@ -54,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        DatabaseButton = (Button) findViewById(R.id.button3);
-        DatabaseButton.setOnClickListener(new View.OnClickListener() {
+        databaseButton = (Button) findViewById(R.id.button3);
+        databaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDatabaseSearch();
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void openDatabaseSearch() {
-        Intent intent = new Intent(this, DatabaseSearchTab.class);
+        Intent intent = new Intent(this, DatabaseSearchActivity.class);
         startActivity(intent);
     }
 /* Database code here
